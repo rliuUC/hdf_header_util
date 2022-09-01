@@ -156,11 +156,14 @@ if __name__ == '__main__':
 
         if not matched_keys == 0:
             print(
-                    "\nNo matching entries found for header keyword",
-                    end=("s: " if (len(args.header_keywords) > 1) else ": ")
+                "\nNo matching entries found for header keyword",
+                end=("s: " if (len(args.header_keywords) > 1) else ": ")
             )
             for i in range(len(args.header_keywords)):
-                print(args.header_keywords[i], end=(", " if (i != len(args.header_keywords) - 1) else "\n\n"))
+                print(
+                    args.header_keywords[i],
+                    end=(", " if (i != len(args.header_keywords) - 1) else "\n\n")
+                )
 
         else:
             x = PrettyTable()
