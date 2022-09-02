@@ -154,7 +154,7 @@ if __name__ == '__main__':
 
             matched_values.append(cur_file_matched_values)
 
-        if not matched_keys == 0:
+        if not matched_keys:
             print(
                 "\nNo matching entries found for header keyword",
                 end=("s: " if (len(args.header_keywords) > 1) else ": ")
